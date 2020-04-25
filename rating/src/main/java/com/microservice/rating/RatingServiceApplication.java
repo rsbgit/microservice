@@ -1,4 +1,4 @@
-package com.microservice.product;
+package com.microservice.rating;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ProductApplication {
+public class RatingServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ProductApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(RatingServiceApplication.class, args);
+	}
 
 }
