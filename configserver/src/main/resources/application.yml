@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/CodeBase/Ravi/Microservices/microservice/configserver/src/main/resources/client-config/product-service.yml
+          uri: file:///C:/CodeBase/Ravi/Microservices/microservice/configserver/src/main/resources/client-config
 server:
-  port: 8080
+  port: 8888

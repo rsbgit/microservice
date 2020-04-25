@@ -3,4 +3,4 @@ spring:
     name: product-service
   cloud:
     config:
-      uri:localhost://8080
+      uri:localhost://8888
