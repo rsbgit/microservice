@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:/CodeBase/Ravi/Microservices/microservice/configserver/src/main/resources/client-config/product-service.yml
+server:
+  port: 8080
