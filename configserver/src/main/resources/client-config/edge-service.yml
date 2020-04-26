@@ -1,0 +1,21 @@
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          -  "*"
+zuul:
+  prefix: /api
+  routes:
+    rating:
+      serviceId: rating-service
+      path: /product/rating/*
+      stripPrefix: false
+      url: http://localhost:8001
+    product:
+      serviceId: product-service
+      path: /product
+      stripPrefix: false
+      url: http://localhost:8000
