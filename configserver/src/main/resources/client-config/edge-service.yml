@@ -11,11 +11,11 @@ zuul:
   routes:
     rating:
       serviceId: rating-service
-      path: /product/rating/*
+      path: /product/rating/**
       stripPrefix: false
       url: http://localhost:8001
     product:
       serviceId: product-service
-      path: /product
+      path: /product/**
       stripPrefix: false
       url: http://localhost:8000

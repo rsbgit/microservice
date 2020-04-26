@@ -6,3 +6,7 @@ management:
       exposure:
         include:
           -  "*"
+rest:
+  endpoint:
+    ratingservice:
+      avgrating: http://rating-service/product/rating

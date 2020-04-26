@@ -1,5 +1,6 @@
 package com.microservice.product.controller;
 
+import com.microservice.product.model.ProductData;
 import com.microservice.product.model.ProductEntity;
 import com.microservice.product.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,8 +28,13 @@ public class ProductController {
         return ResponseEntity.ok(productService.getProducts());
     }
 
-    @GetMapping("/{id}")
+  //  @GetMapping("/{id}")
     public ResponseEntity<ProductEntity> getProductById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(productService.getProductById(id));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ProductData> getProductDetailsById(@PathVariable("id") Long id) {
+        return ResponseEntity.ok(productService.getProductDataById(id));
     }
 }
